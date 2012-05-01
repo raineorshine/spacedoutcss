@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>S P A C E D   O U T</title>
 	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" href="http://yandex.st/highlightjs/6.2/styles/solarized_dark.min.css">
 	<!-- can't reference directly from github because of MIME type? -->
 	<!--<link rel="stylesheet" type="text/css" href="https://raw.github.com/RaineOrShine/spacedoutcss/master/spacedout.css" />-->
 	<link rel="stylesheet" type="text/css" href="spacedout.css" />
@@ -71,27 +72,62 @@
 		</div>
 		</section>
 
-		<section>
+		<section class="space-v">
 			<h2>Available Functions</h2>
-			<pre><code>
-space-h()	// defaults to 20px
+			<pre><code>space-h()	// defaults to 20px
 space-h20()
 space-h10()
 space-h5()
-space-h(50px)	// custom horizontal spacing
-space-v()	// defaults to 20px
+space-h(50px)	// custom spacing
+space-v()
 space-v20()
 space-v10()
 space-v5()
-space-v(50px)	// custom vertical spacing
-			</code></pre>
+space-v(50px)</code></pre>
 		</section>
 
-		<section>
-			<h2>Last but not least...</h2>
-			<p>The last element always has <code>margin-bottom: 0px</code>.</p>
+		<section class="space-v">
+			<h2>The Code</h2>
+			<p>Add this code to your stylus file.</p>
+			<pre><code class="javascript">space-out(space, margin-side)
+  & > *
+    add-property(margin- + margin-side, space)
+    &:last-child
+      add-property(margin- + margin-side, 0)
+
+space-h(space = 20px)
+  space-out(space, right)
+
+space-h5()
+  space-h(5px)
+space-h10()
+  space-h(10px)
+space-h20()
+  space-h(20px)
+
+space-v(space = 20px)
+  space-out(space, bottom)
+
+space-v5()
+  space-v(5px)
+space-v10()
+  space-v(10px)
+space-v20()
+  space-v(20px)
+
+space-list()
+  space-h()
+  &ul, &ol
+    list-style none
+    margin 0
+    padding 0
+  &> *
+    display inline-block</code></pre>
 		</section>
 	</div>
+
+	<script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
