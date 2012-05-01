@@ -1,0 +1,48 @@
+/*********************************************
+  S P A C E D   O U T
+  A css micro-framework for evenly spacing elements
+ *********************************************/
+
+default-space = 20px
+
+space-out(space, margin-side)
+  & > *
+    add-property(margin- + margin-side, space)
+    &:last-child
+      add-property(margin- + margin-side, 0)
+
+space-h(space = default-space)
+  space-out(space, right)
+
+space-v(space = default-space)
+  space-out(space, bottom)
+
+space-list(space = default-space)
+  space-h(space)
+  list-style none
+  margin 0
+  padding 0
+  &> li
+    display inline-block
+
+
+/*********************************************
+ * TEST
+ *********************************************/
+
+.space-h
+  space-h()
+.space-h5
+  space-h(5px)
+.space-h10
+  space-h(10px)
+
+.space-v
+  space-v()
+.space-v5
+  space-v(5px)
+.space-v10
+  space-v(10px)
+
+.space-list
+  space-list()
