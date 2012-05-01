@@ -1,0 +1,50 @@
+body {
+  color: #333;
+  background-color: #333;
+  font-family: Arial;
+  font-size: 16px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+}
+code {
+  font-family: Monospace;
+  font-weight: bold;
+  font-size: 120%;
+}
+#content {
+  width: 900px;
+  margin: 0 auto;
+}
+#content> section {
+  background-color: #9fa;
+  padding: 25px;
+}
+#list li {
+  background-color: #6ff;
+  border: solid 1px rgba(0,0,0,0.60);
+  padding: 5px;
+  border-radius: 5px;
+}
+.megaspace {
+  letter-spacing: 25px;
+  text-transform: uppercase;
+}
+.subtitle {
+  color: #898;
+  font-style: italic;
+  font-size: 24px;
+}
+.box {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #6ff;
+  border-radius: 5px;
+  border: solid 1px rgba(0,0,0,0.60);
+}

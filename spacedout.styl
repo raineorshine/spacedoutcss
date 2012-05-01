@@ -1,0 +1,69 @@
+/*********************************************
+  S P A C E D   O U T
+  A   c s s   m a r g i n   m i c r o - f r a m e w o r k
+ *********************************************/
+
+space-out(space, margin-side)
+  & > *
+    add-property(margin- + margin-side, space)
+    &:last-child
+      add-property(margin- + margin-side, 0)
+
+space-h(space = 20px)
+  space-out(space, right)
+
+space-h5()
+  space-h(5px)
+space-h10()
+  space-h(10px)
+space-h20()
+  space-h(20px)
+
+space-v(space = 20px)
+  space-out(space, bottom)
+
+space-v5()
+  space-v(5px)
+space-v10()
+  space-v(10px)
+space-v20()
+  space-v(20px)
+
+space-list()
+  space-h()
+  &ul, &ol
+    list-style none
+    margin 0
+    padding 0
+  &> *
+    display inline-block
+
+
+/*********************************************
+ * TEST
+ *********************************************/
+
+.space-out
+  space-out(20px, right)
+
+.space-h
+  space-h()
+.space-h5
+  space-h5()
+.space-h10
+  space-h10()
+.space-h20
+  space-h20()
+
+.space-v
+  space-v()
+.space-v5
+  space-v5()
+.space-v10
+  space-v10()
+.space-v20
+  space-v20()
+
+.space-list
+  space-list()
+
