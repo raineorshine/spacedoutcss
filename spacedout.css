@@ -1,0 +1,96 @@
+/*********************************************
+  S P A C E D   O U T
+  A   c s s   m a r g i n   m i c r o - f r a m e w o r k
+ *********************************************/
+/*********************************************
+ * TEST
+ *********************************************/
+.space-out > * {
+  margin-right: 20px;
+  margin-right: 20px;
+}
+.space-out > *:last-child {
+  margin-right: 0;
+  margin-right: 0;
+}
+.space-h > * {
+  margin-right: 20px;
+  margin-right: 20px;
+}
+.space-h > *:last-child {
+  margin-right: 0;
+  margin-right: 0;
+}
+.space-h5 > * {
+  margin-right: 5px;
+  margin-right: 5px;
+}
+.space-h5 > *:last-child {
+  margin-right: 0;
+  margin-right: 0;
+}
+.space-h10 > * {
+  margin-right: 10px;
+  margin-right: 10px;
+}
+.space-h10 > *:last-child {
+  margin-right: 0;
+  margin-right: 0;
+}
+.space-h20 > * {
+  margin-right: 20px;
+  margin-right: 20px;
+}
+.space-h20 > *:last-child {
+  margin-right: 0;
+  margin-right: 0;
+}
+.space-v > * {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.space-v > *:last-child {
+  margin-bottom: 0;
+  margin-bottom: 0;
+}
+.space-v5 > * {
+  margin-bottom: 5px;
+  margin-bottom: 5px;
+}
+.space-v5 > *:last-child {
+  margin-bottom: 0;
+  margin-bottom: 0;
+}
+.space-v10 > * {
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+.space-v10 > *:last-child {
+  margin-bottom: 0;
+  margin-bottom: 0;
+}
+.space-v20 > * {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.space-v20 > *:last-child {
+  margin-bottom: 0;
+  margin-bottom: 0;
+}
+.space-list > * {
+  margin-right: 20px;
+  margin-right: 20px;
+}
+.space-list > *:last-child {
+  margin-right: 0;
+  margin-right: 0;
+}
+.space-listul,
+.space-listol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.space-list> * {
+  display: inline-block;
+}
