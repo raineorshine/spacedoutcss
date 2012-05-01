@@ -3,21 +3,21 @@
   A css micro-framework for evenly spacing elements
  *********************************************/
 
-default-space = 20px
+defaultspace = 20px
 
 space-out(space, margin-side)
   & > *
-    add-property(margin- + margin-side, space)
+    margin-{margin-side} space
     &:last-child
-      add-property(margin- + margin-side, 0)
+      margin-{margin-side} 0
 
-space-h(space = default-space)
+space-h(space = defaultspace)
   space-out(space, right)
 
-space-v(space = default-space)
+space-v(space = defaultspace)
   space-out(space, bottom)
 
-space-list(space = default-space)
+space-list(space = defaultspace)
   space-h(space)
   list-style none
   margin 0
