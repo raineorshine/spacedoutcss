@@ -23,7 +23,7 @@
 		<section class="space-v">
 			<h2>Space elements horizontally</h2>
 			<div class="space-v">
-				<section class="space-v10">
+				<section class="space-v">
 					<p><code>space-h()</code> defaults to 20px.</p>
 					<div class="space-h">
 						<div class="box"></div>
@@ -33,7 +33,7 @@
 						<div class="box"></div>
 					</div>
 				</section>
-				<section class="space-v10">
+				<section class="space-v">
 					<p>Supply a custom margin with <code>space-h(5)</code>.</p>
 					<div class="space-h5">
 						<div class="box"></div>
@@ -48,7 +48,7 @@
 
 		<section class="space-v">
 		<h2>Lists</h2>
-		<div class="space-v10">
+		<div class="space-v">
 			<p>List items spaced horizontally with <code>space-list()</code>.</p>
 			<ul id="list" class="space-list">
 				<li>List Item 1</li>
@@ -63,21 +63,21 @@
 		<section class="space-v">
 			<h2>The Code</h2>
 			<p>Add this code to your stylus file.</p>
-			<pre><code class="javascript">default-space = 20px
+			<pre><code class="javascript">defaultspace = 20px
 
 space-out(space, margin-side)
   & > *
-    add-property(margin- + margin-side, space)
+    margin-{margin-side} space
     &:last-child
-      add-property(margin- + margin-side, 0)
+      margin-{margin-side} 0
 
-space-h(space = default-space)
+space-h(space = defaultspace)
   space-out(space, right)
 
-space-v(space = default-space)
+space-v(space = defaultspace)
   space-out(space, bottom)
 
-space-list(space = default-space)
+space-list(space = defaultspace)
   space-h(space)
   list-style none
   margin 0
