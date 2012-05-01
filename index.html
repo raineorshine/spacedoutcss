@@ -89,25 +89,26 @@ space-v(50px)</code></pre>
 		<section class="space-v">
 			<h2>The Code</h2>
 			<p>Add this code to your stylus file.</p>
-			<pre><code class="javascript">space-out(space, margin-side)
+			<pre><code class="javascript">default-space = 20px
+
+space-out(space, margin-side)
   & > *
     add-property(margin- + margin-side, space)
     &:last-child
       add-property(margin- + margin-side, 0)
 
-space-h(space = 20px)
+space-h(space = default-space)
   space-out(space, right)
 
-space-v(space = 20px)
+space-v(space = default-space)
   space-out(space, bottom)
 
-space-list()
-  space-h()
-  &ul, &ol
-    list-style none
-    margin 0
-    padding 0
-  &> *
+space-list(space = default-space)
+  space-h(space)
+  list-style none
+  margin 0
+  padding 0
+  &> li
     display inline-block</code></pre>
 		</section>
 	</div>
